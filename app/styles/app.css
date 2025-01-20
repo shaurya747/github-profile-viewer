@@ -1,1 +1,144 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+.search-container {
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #0366d6;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0366d6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #0255af;
+}
+
+.search-button:active {
+  background-color: #014c9e;
+}
+
+.profile-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .profile-item {
+    width: 150px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .profile-header {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e1e4e8;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #0366d6;
+    text-decoration: none;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .back-button:hover {
+    background-color: #f1f4f8;
+    text-decoration: none;
+  }
+  
+  .repository-list {
+    padding: 0 20px;
+  }
+  
+  .repository-item {
+    padding: 20px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+  }
+  
+  .repository-item h3 {
+    margin: 0;
+    color: #0366d6;
+  }
+  
+  .repository-item p {
+    margin: 8px 0;
+    color: #586069;
+  }
+  
+  .repo-link {
+    display: inline-block;
+    padding: 6px 12px;
+    color: #0366d6;
+    text-decoration: none;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+  }
+  
+  .repo-link:hover {
+    background-color: #f1f4f8;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .pagination-link {
+    padding: 8px 16px;
+    color: #0366d6;
+    text-decoration: none;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+  }
+  
+  .pagination-link:hover {
+    background-color: #f1f4f8;
+  }
+  
+  .page-info {
+    padding: 0 16px;
+    color: #586069;
+  }

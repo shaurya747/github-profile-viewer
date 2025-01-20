@@ -1,0 +1,46 @@
+<div class="profile-header">
+  <LinkTo @route="home" @query={{hash page=1}} class="back-button">
+    ← Back to Home
+  </LinkTo>
+  <h1>Repositories of {{@model.username}}</h1>
+</div>
+
+<div class="repository-list">
+  {{#each @model.repositories as |repo|}}
+    <div class="repository-item">
+      <h3>{{repo.name}}</h3>
+      <p>{{repo.description}}</p>
+      <a href={{repo.html_url}} target="_blank" class="repo-link">View on GitHub</a>
+    </div>
+  {{else}}
+    <p>No repositories found.</p>
+  {{/each}}
+</div>
+
+<div class="pagination">
+  {{#if @model.hasPrevPage}}
+    <LinkTo 
+      @route="profile" 
+      @model={{@model.username}} 
+      @query={{hash page=(sub @model.currentPage 1)}}
+      class="pagination-link"
+    >
+      Previous
+    </LinkTo>
+  {{/if}}
+
+  <span class="page-info">
+    Page {{@model.currentPage}} of {{@model.totalPages}}
+  </span>
+
+  {{#if @model.hasNextPage}}
+    <LinkTo 
+      @route="profile" 
+      @model={{@model.username}} 
+      @query={{hash page=(add @model.currentPage 1)}}
+      class="pagination-link"
+    >
+      Next
+    </LinkTo>
+  {{/if}}
+</div>
