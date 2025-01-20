@@ -1,12 +1,12 @@
-import { module, test } from 'qunit';
-import { setupTest } from 'github-profile-viewer/tests/helpers';
+import { module, test } from "qunit";
+import { setupTest } from "github-profile-viewer/tests/helpers";
 
-module('Unit | Service | github-api', function (hooks) {
+module("Unit | Service | github-api", function (hooks) {
   setupTest(hooks);
 
   // TODO: Replace this with your real tests.
-  test('it exists', function (assert) {
-    let service = this.owner.lookup('service:github-api');
+  test("it exists", function (assert) {
+    let service = this.owner.lookup("service:github-api");
     assert.ok(service);
   });
 });

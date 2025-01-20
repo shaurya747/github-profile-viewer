@@ -46,99 +46,99 @@
 }
 
 .profile-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .profile-item {
-    width: 150px;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-  
-  .profile-header {
-    padding: 20px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #e1e4e8;
-  }
-  
-  .back-button {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-bottom: 20px;
-    color: #0366d6;
-    text-decoration: none;
-    background-color: #f6f8fa;
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-    transition: background-color 0.2s;
-  }
-  
-  .back-button:hover {
-    background-color: #f1f4f8;
-    text-decoration: none;
-  }
-  
-  .repository-list {
-    padding: 0 20px;
-  }
-  
-  .repository-item {
-    padding: 20px;
-    margin-bottom: 16px;
-    background-color: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-  }
-  
-  .repository-item h3 {
-    margin: 0;
-    color: #0366d6;
-  }
-  
-  .repository-item p {
-    margin: 8px 0;
-    color: #586069;
-  }
-  
-  .repo-link {
-    display: inline-block;
-    padding: 6px 12px;
-    color: #0366d6;
-    text-decoration: none;
-    background-color: #f6f8fa;
-    border: 1px solid #e1e4e8;
-    border-radius: 4px;
-  }
-  
-  .repo-link:hover {
-    background-color: #f1f4f8;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-  }
-  
-  .pagination-link {
-    padding: 8px 16px;
-    color: #0366d6;
-    text-decoration: none;
-    background-color: #f6f8fa;
-    border: 1px solid #e1e4e8;
-    border-radius: 4px;
-  }
-  
-  .pagination-link:hover {
-    background-color: #f1f4f8;
-  }
-  
-  .page-info {
-    padding: 0 16px;
-    color: #586069;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.profile-item {
+  width: 150px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.profile-header {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  color: #0366d6;
+  text-decoration: none;
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #f1f4f8;
+  text-decoration: none;
+}
+
+.repository-list {
+  padding: 0 20px;
+}
+
+.repository-item {
+  padding: 20px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+.repository-item h3 {
+  margin: 0;
+  color: #0366d6;
+}
+
+.repository-item p {
+  margin: 8px 0;
+  color: #586069;
+}
+
+.repo-link {
+  display: inline-block;
+  padding: 6px 12px;
+  color: #0366d6;
+  text-decoration: none;
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+}
+
+.repo-link:hover {
+  background-color: #f1f4f8;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.pagination-link {
+  padding: 8px 16px;
+  color: #0366d6;
+  text-decoration: none;
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+}
+
+.pagination-link:hover {
+  background-color: #f1f4f8;
+}
+
+.page-info {
+  padding: 0 16px;
+  color: #586069;
+}

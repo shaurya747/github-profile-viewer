@@ -19,9 +19,9 @@
 
 <div class="pagination">
   {{#if @model.hasPrevPage}}
-    <LinkTo 
-      @route="profile" 
-      @model={{@model.username}} 
+    <LinkTo
+      @route="profile"
+      @model={{@model.username}}
       @query={{hash page=(sub @model.currentPage 1)}}
       class="pagination-link"
     >
@@ -30,13 +30,16 @@
   {{/if}}
 
   <span class="page-info">
-    Page {{@model.currentPage}} of {{@model.totalPages}}
+    Page
+    {{@model.currentPage}}
+    of
+    {{@model.totalPages}}
   </span>
 
   {{#if @model.hasNextPage}}
-    <LinkTo 
-      @route="profile" 
-      @model={{@model.username}} 
+    <LinkTo
+      @route="profile"
+      @model={{@model.username}}
       @query={{hash page=(add @model.currentPage 1)}}
       class="pagination-link"
     >

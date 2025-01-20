@@ -1,14 +1,14 @@
 <div class="search-container">
   <h1>GitHub Profile Viewer</h1>
   <div class="search-box">
-    <input 
-  type="text" 
-  class="search-input" 
-  placeholder="Enter GitHub username"
-  {{on "input" this.updateUsername}}
-  {{on "keypress" this.handleKeyPress}}
-  value={{this.username}}
->
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Enter GitHub username"
+      {{on "input" this.updateUsername}}
+      {{on "keypress" this.handleKeyPress}}
+      value={{this.username}}
+    />
     <button type="button" class="search-button" {{on "click" this.searchUser}}>
       Search
     </button>
@@ -18,8 +18,16 @@
 <div class="profile-list">
   {{#each @model.profiles as |profile|}}
     <div class="profile-item">
-      <img src={{profile.avatar_url}} alt={{profile.login}} width="50" height="50">
-      <LinkTo @route="profile" @model={{profile.login}}>{{profile.login}}</LinkTo>
+      <img
+        src={{profile.avatar_url}}
+        alt={{profile.login}}
+        width="50"
+        height="50"
+      />
+      <LinkTo
+        @route="profile"
+        @model={{profile.login}}
+      >{{profile.login}}</LinkTo>
     </div>
   {{else}}
     <p>No profiles found. Please try again later.</p>
@@ -28,15 +36,23 @@
 
 <div class="pagination">
   {{#if (gt @model.currentPage 1)}}
-    <LinkTo @route="home" @query={{hash page=(sub @model.currentPage 1)}} class="pagination-link">
+    <LinkTo
+      @route="home"
+      @query={{hash page=(sub @model.currentPage 1)}}
+      class="pagination-link"
+    >
       Previous
     </LinkTo>
   {{/if}}
-  
+
   <span class="page-number">Page {{@model.currentPage}}</span>
 
   {{#if @model.hasMorePages}}
-    <LinkTo @route="home" @query={{hash page=(add @model.currentPage 1)}} class="pagination-link">
+    <LinkTo
+      @route="home"
+      @query={{hash page=(add @model.currentPage 1)}}
+      class="pagination-link"
+    >
       Next
     </LinkTo>
   {{/if}}

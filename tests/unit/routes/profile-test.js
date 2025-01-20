@@ -1,11 +1,11 @@
-import { module, test } from 'qunit';
-import { setupTest } from 'github-profile-viewer/tests/helpers';
+import { module, test } from "qunit";
+import { setupTest } from "github-profile-viewer/tests/helpers";
 
-module('Unit | Route | profile', function (hooks) {
+module("Unit | Route | profile", function (hooks) {
   setupTest(hooks);
 
-  test('it exists', function (assert) {
-    let route = this.owner.lookup('route:profile');
+  test("it exists", function (assert) {
+    let route = this.owner.lookup("route:profile");
     assert.ok(route);
   });
 });
