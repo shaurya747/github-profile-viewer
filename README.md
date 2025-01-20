@@ -1,7 +1,18 @@
-# github-profile-viewer
+## GitHub Profile Viewer
+A web application built with Ember.js that allows users to browse GitHub profiles and repositories.
+Features
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+-Browse GitHub user profiles with pagination
+-Search for specific GitHub users
+-View user repositories with pagination
+-Responsive design with GitHub-inspired UI
+-Real-time profile and repository updates
+
+## Homepage
+![Screenshot 2025-01-20 at 4 04 20 PM](https://github.com/user-attachments/assets/57cea942-8481-478d-b741-86ba5f92b177)
+
+## Profile Page
+![Screenshot 2025-01-20 at 4 04 45 PM](https://github.com/user-attachments/assets/5dd746e9-9309-46e3-9786-9a0f5e09d96c)
 
 ## Prerequisites
 
